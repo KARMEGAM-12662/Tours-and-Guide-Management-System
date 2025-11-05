@@ -1,0 +1,145 @@
+/* --- Base styles --- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+}
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.primary-btn {
+  background-color: #0b4661;
+  color: #fff;
+}
+.secondary-btn {
+  background-color: #fff;
+  color: #0b4661;
+  border: 2px solid #0b4661;
+}
+
+/* --- Header/Nav --- */
+.site-header {
+  background: #0b4661;
+  color: #fff;
+  padding: 12px 0;
+}
+.site-header .brand a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.nav a.active {
+  text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Popular Destinations Section --- */
+.popular-destinations {
+  padding: 40px 0;
+}
+.popular-destinations h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.dest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.dest-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  width: calc(33.333% - 16px);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.dest-card img {
+  width: 100%;v 
+  height: 180px;
+  object-fit: cover;
+}
+.dest-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dest-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+.dest-info p {
+  margin: 0 0 12px;
+  flex: 1;
+}
+.dest-info .price {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.dest-info .btn {
+  align-self: start;
+}
+
+/* --- CTA Banner --- */
+.cta-banner {
+  padding: 50px 0;
+  background: #0b4661;
+  color: #fff;
+  text-align: center;
+}
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .dest-card {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 600px) {
+  .dest-list {
+    flex-direction: column;
+  }
+  .dest-card {
+    width: 100%;
+  }
+}
